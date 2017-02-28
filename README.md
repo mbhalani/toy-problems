@@ -3,6 +3,7 @@ Strengthen problem solving abilities, implemented with Javascript
 
 ### All Challenges
 All Anagrams
+
 Arrayception
 Binary Heap
 Character Frequency --- Solved!
