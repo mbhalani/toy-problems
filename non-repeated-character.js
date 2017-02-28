@@ -1,6 +1,7 @@
 /*
 Non-repeated Character
-Given an arbitrary input string, return the first non-repeating character. For strings with all repeats, return 'sorry'.
+Given an arbitrary input string, return the first non-repeating character. For
+strings with all repeats, return 'sorry'.
 
           Examples             Input Output
 string:   "ABCDBIRDUP"          "A"
@@ -8,6 +9,7 @@ string:   "XXXXXXX"             "sorry"
 string:   "ALAMABA"             "L"
 string:   "BABA"                "sorry"
 */
+
 function firstNonRepeatedCharacter (string) {
   for (let i = 0; i < string.length; i++) {
     let result = string.charAt(i);
