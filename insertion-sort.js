@@ -27,4 +27,24 @@ Output:
 */
 
 function insertionSort(array) {
+  for (let i = 0; i < array.length - 1; i++) {
+    for (let j = 1; j < array.length; j++) {
+      if (array[i].value > array[j].value) {
+        let temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      } else if ( array[i].value === array[j].value) {
+        if (array[i].order > array[j].order) {
+          let temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+        }
+      }
+    }
+  }
+
+  return array;
 }
+
+console.log(insertionSort([ { "value": 3 }, { "value": 1 }, { "value": 2 } ]));
+console.log(insertionSort([ { "value": 10 }, { "value": 5, "order": 1 }, { "value": 5, "order": 2 } ]));
