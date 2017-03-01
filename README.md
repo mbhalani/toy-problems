@@ -4,21 +4,21 @@ Strengthen problem solving abilities, implemented with Javascript
 - All Anagrams
 - Arrayception
 - Binary Heap
-- Character Frequency               `Sovled!`
+- Character Frequency  &nbsp;&nbsp;&nbsp;**`Sovled!`**
 - Coin Sums
 - Common Ancestor
 - Eventing Library
 - Function Bind
 - Hash Table
 - Hash Table Resizing
-- Insertion Sort --- Solved!
-- Linked List --- Solved!
+- Insertion Sort  &nbsp;&nbsp;&nbsp;**`Sovled!`**
+- Linked List  &nbsp;&nbsp;&nbsp;**`Sovled!`**
 - Linked List Cycles
 - Longest Palindrome
-- Non-repeated Character --- Solved!
+- Non-repeated Character  &nbsp;&nbsp;&nbsp;**`Sovled!`**
 - Number to English
-- Only Unique --- Solved!
-- Pony Farm --- Solved!
+- Only Unique  &nbsp;&nbsp;&nbsp;**`Sovled!`**
+- Pony Farm  &nbsp;&nbsp;&nbsp;**`Sovled!`**
 - Prime Tester
 - Prime Tester(extra credit)
 - Queue Stack
@@ -26,7 +26,7 @@ Strengthen problem solving abilities, implemented with Javascript
 - Rock Paper Permutation
 - Roman Numeral Translator
 - Spiral Traversal
-- Sum Array --- Solved!
+- Sum Array  &nbsp;&nbsp;&nbsp;**`Sovled!`**
 - Telephone Words
 - Tree Count Leaves
 - Tree Mapping
