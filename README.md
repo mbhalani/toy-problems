@@ -20,7 +20,7 @@ Strengthen problem solving abilities, implemented with Javascript
 - Only Unique ----- **`Solved!`**
 - Pony Farm ----- **`Solved!`**
 - Prime Tester ----- **`Solved!`**
-- Prime Tester(extra)
+- Prime Range Tester ----- **`Solved!`**
 - Queue Stack
 - Robot Paths
 - Rock Paper Permutation
