@@ -19,7 +19,7 @@ Strengthen problem solving abilities, implemented with Javascript
 - Number to English
 - Only Unique ----- **`Solved!`**
 - Pony Farm ----- **`Solved!`**
-- Prime Tester
+- Prime Tester ----- **`Solved!`**
 - Prime Tester(extra)
 - Queue Stack
 - Robot Paths
