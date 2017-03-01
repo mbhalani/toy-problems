@@ -19,13 +19,13 @@ Strengthen problem solving abilities, implemented with Javascript
 - Number to English
 - Only Unique ----- **`Solved!`**
 - Pony Farm ----- **`Solved!`**
-- Prime Tester ----- **`Solved!`**
 - Prime Range Tester ----- **`Solved!`**
+- Prime Tester ----- **`Solved!`**
 - Queue Stack
 - Robot Paths
 - Rock Paper Permutation
 - Roman Numeral Translator
-- Spiral Traversal
+- Spiral Traversal ----- **`Solved!`**
 - Sum Array ----- **`Solved!`**
 - Telephone Words
 - Tree Count Leaves
