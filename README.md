@@ -14,7 +14,7 @@ Strengthen problem solving abilities, implemented with Javascript
 - Insertion Sort ----- **`Solved!`**
 - Linked List ----- **`Solved!`**
 - Linked List Cycles
-- Longest Palindrome
+- Longest Palindrome ----- **`Solved!`**
 - Non-repeated Character ----- **`Solved!`**
 - Number to English
 - Only Unique ----- **`Solved!`**
