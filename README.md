@@ -1,19 +1,18 @@
 # toy-problems
 Strengthen problem solving abilities, implemented with Javascript
 
-### All Challenges
-All Anagrams
-Arrayception
-Binary Heap
-Character Frequency --- Solved!
-Coin Sums
-Common Ancestor
+### All Anagrams
+#### Arrayception
+#### Binary Heap
+#### Character Frequency --- Solved!
+#### Coin Sums
+#### Common Ancestor
 Eventing Library
 Function Bind
 Hash Table
 Hash Table Resizing
 Insertion Sort --- Solved!
-Linked List
+Linked List --- Solved!
 Linked List Cycles
 Longest Palindrome
 Non-repeated Character --- Solved!
