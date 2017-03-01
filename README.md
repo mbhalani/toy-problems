@@ -11,14 +11,14 @@ Strengthen problem solving abilities, implemented with Javascript
 - Function Bind
 - Hash Table
 - Hash Table Resizing
-- Insertion Sort  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`Solved!`**
-- Linked List  &nbsp;&nbsp&nbsp;&nbsp;&nbsp;**`Solved!`**
+- Insertion Sort ----- **`Solved!`**
+- Linked List ----- **`Solved!`**
 - Linked List Cycles
 - Longest Palindrome
-- Non-repeated Character  &nbsp;&nbsp&nbsp;&nbsp;&nbsp;**`Solved!`**
+- Non-repeated Character ----- **`Solved!`**
 - Number to English
-- Only Unique  &nbsp;&nbsp&nbsp;&nbsp;&nbsp;**`Solved!`**
-- Pony Farm
+- Only Unique ----- **`Solved!`**
+- Pony Farm ----- **`Solved!`**
 - Prime Tester
 - Prime Tester(extra)
 - Queue Stack
@@ -26,7 +26,7 @@ Strengthen problem solving abilities, implemented with Javascript
 - Rock Paper Permutation
 - Roman Numeral Translator
 - Spiral Traversal
-- Sum Array  &nbsp;&nbsp&nbsp;&nbsp;&nbsp;**`Solved!`**
+- Sum Array ----- **`Solved!`**
 - Telephone Words
 - Tree Count Leaves
 - Tree Mapping
