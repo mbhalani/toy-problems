@@ -4,14 +4,14 @@ Strengthen problem solving abilities, implemented with Javascript
 - All Anagrams
 - Arrayception
 - Binary Heap
-- Character Frequency  &nbsp;&nbsp&nbsp;&nbsp;&nbsp;**`Solved!`**
+- Character Frequency ----- **`Solved!`**
 - Coin Sums
 - Common Ancestor
 - Eventing Library
 - Function Bind
 - Hash Table
 - Hash Table Resizing
-- Insertion Sort  &nbsp;&nbsp&nbsp;&nbsp;&nbsp;**`Solved!`**
+- Insertion Sort  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**`Solved!`**
 - Linked List  &nbsp;&nbsp&nbsp;&nbsp;&nbsp;**`Solved!`**
 - Linked List Cycles
 - Longest Palindrome
