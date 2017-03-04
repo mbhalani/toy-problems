@@ -13,4 +13,20 @@ array: [ [ [ ] ] ]                          0
 */
 
 function arrayception(array) {
+  var deepest = 0;
+
+  var traverseArray = (array, level) => {
+    array.forEach( (subArr) => {
+      if (Array.isArray(subArr)) {
+        traverseArray(subArr, level + 1);
+      } else if (level > deepest) {
+        deepest = level;
+      }
+    });
+  };
+  traverseArray(array, 1);
+
+  return deepest;
 }
+
+console.log(arrayception([ [ [ 1] ] ] ));
