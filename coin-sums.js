@@ -36,3 +36,21 @@ function coinSums(total) {
 }
 
 console.log(coinSums(5));
+
+// function coinSums (total) {
+//   var coins = [1,2,5,10,20,50,100,200];
+//   var count = 0;
+
+//   var recurse = function(sum, index) {
+//     if (sum === total) {
+//       count++;
+//     } else if (sum < total) {
+//       for (var i = index; i < coins.length; i++) {
+//         recurse(sum+coins[i], i);
+//       }
+//     }
+//   };
+//   recurse(0,0);
+//   return count;
+// }
+

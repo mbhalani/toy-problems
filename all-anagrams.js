@@ -14,4 +14,22 @@ string: "abc"     [ "abc", "acb", "bac", "bca", "cab", "cba" ]
 */
 
 function allAnagrams(string) {
+  var result = [];
+
+  var traverseRecursive = (firstPart, lastPart) => {
+    if (firstPart.length === string.length) {
+      result.push(firstPart);
+    }
+
+    for (let i = 0; i < lastPart.length; i++) {
+      let firstPartPlus = firstPart + lastPart[i];
+      let remainOfString = lastPart.slice(0, i) + lastPart.slice(i + 1);
+      traverseRecursive(firstPartPlus, remainOfString);
+    }
+  };
+  traverseRecursive('', string);
+
+  return result;
 }
+
+console.log(allAnagrams('abc'));
