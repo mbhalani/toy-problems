@@ -51,8 +51,8 @@ Tree.prototype.getClosestCommonAncestor = function(nodeOne, nodeTwo){
   let path1 = this.getAncestorPath(nodeOne);
   let path2 = this.getAncestorPath(nodeTwo);
 
-  for (let i = path1.length; i > -1; i--) {
-    for (let j = path2.length; j > -1; j--) {
+  for (let i = path1.length - 1; i > -1; i--) {
+    for (let j = path2.length - 1; j > -1; j--) {
       if (path2[j] === path1[i]) {
         return path2[j];
       }
