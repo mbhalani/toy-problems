@@ -35,5 +35,25 @@ function Node (val) {
 */
 
 var hasCycle = function(linkedList){
+  if (linkedList === null || linkedList.next === null) {
+    return false;
+  }
 
+  var first = linkedList.next;
+  var second = linkedList.next.next;
+  if (second === null) {
+      return false;
+  }
+
+  while (first != second) {
+    if (second.next === null) {
+      return false;
+    }
+    first = first.next;
+    second = second.next.next;
+    if (first === null || second === null) {
+      return false;
+    }
+  }
+  return true;
 };
