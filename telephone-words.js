@@ -22,6 +22,37 @@ digitString:
 */
 
 function telephoneWords(digitString) {
+  var keyPad = {
+    0: [0],
+    1: [1],
+    2: ['A', 'B', 'C'],
+    3: ['D', 'E', 'F'],
+    4: ['G', 'H', 'I'],
+    5: ['J', 'K', 'L'],
+    6: ['M', 'N', 'O'],
+    7: ['P', 'Q', 'R', 'S'],
+    8: ['T', 'U', 'V'],
+    9: ['W', 'X', 'Y', 'Z'],
+  };
 
+  var result = [];
+  var numbers = digitString.split('');
+
+  var traverseDigitString = function (word, numbers) {
+    if (numbers.length === 0) {
+      return result.push(word);
+    }
+
+    let remainNumbers = numbers.slice(1);
+    keyPad[numbers[0]].forEach( (letter) => {
+      traverseDigitString(word + letter, remainNumbers);
+    });
+  };
+  traverseDigitString('', numbers);
+
+  return result;
 }
 
+console.log(telephoneWords('0002'));
+
+console.log(telephoneWords('1123'));
