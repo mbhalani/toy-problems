@@ -39,11 +39,42 @@ Tree.prototype.addChild = function(child){
 };
 
 Tree.prototype.getClosestCommonAncestor = function(nodeOne, nodeTwo){
+  //Tree {
+  //children: [ Tree { children: [Object] }, Tree { children: [] } ] }
+  if (nodeOne === nodeTwo) {
+    return nodeOne;
+  }
+  if (!this.isDescendant(nodeOne) || !this.isDescendant(nodeTwo)) {
+    return null;
+  }
 
+  let path1 = this.getAncestorPath(nodeOne);
+  let path2 = this.getAncestorPath(nodeTwo);
+
+  for (let i = path1.length; i > -1; i--) {
+    for (let j = path2.length; j > -1; j--) {
+      if (path2[j] === path1[i]) {
+        return path2[j];
+      }
+    }
+  }
 };
 
 Tree.prototype.getAncestorPath = function(person){
-
+  // if child is NOT a descendant of familty tree, then return null
+  if (!this.isDescendant(person)) {
+    return null;
+  } else {
+    for (let i = 0; i < this.children.length; i++) {
+      if (this.children[i] === person) {
+        return [this, this.children[i]];
+      } else {
+        if (this.children[i].isDescendant(person)) {
+          return [this].concat(this.children[i].getAncestorPath(person));
+        }
+      }
+    }
+  }
 };
 
 /**
