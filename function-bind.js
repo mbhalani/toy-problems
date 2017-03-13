@@ -41,9 +41,24 @@ DO NOT use the native bind() function in your solutions. You may use the functio
 */
 
 var bind = function(func, context) {
+  // use slice.call on arguments
+  var bindArg = Array.prototype.slice.call(arguments, 2);
 
+  return function(){
+    var funcArg = Array.prototype.slice.call(arguments);
+    return func.apply(context, bindArg.concat(funcArg));
+  };
 };
 
 Function.prototype.bind = function(context) {
+  var bindArg = Array.prototype.slice.call(arguments, 1);
 
+  var that = this;
+  return function(){
+    var fnArg = Array.prototype.slice.call(arguments);
+
+    var arg = bindArg.concat(fnArg);
+    console.log(arguments, arg);
+    return that.apply(context, arg);
+  };
 };
