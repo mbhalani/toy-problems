@@ -44,7 +44,8 @@ function robotPaths(n) {
 
   var searchPath = function(i, j) {
     if (i === n - 1 && j === n - 1) {
-      return uniquePathCount++;
+      uniquePathCount++;
+      return;
     }
     if (i < 0 || i >= n || j < 0 || j >= n || grid.hasBeenVisited(i, j)) {
       return;
@@ -53,7 +54,7 @@ function robotPaths(n) {
       searchPath(i, j + 1);
       searchPath(i + 1, j);
       searchPath(i, j - 1);
-      searchPath(j - 1, j);
+      searchPath(i - 1, j);
       grid.togglePiece(i, j);
     }
   };
@@ -62,7 +63,7 @@ function robotPaths(n) {
   return uniquePathCount;
 }
 
-console.log(robotPaths(2));
+console.log(robotPaths(3));
 
 
 
