@@ -43,7 +43,16 @@ var Tree = function(value){
 };
 
 Tree.prototype.countLeaves = function () {
+  var leafCount = 0;
 
+  if (this.children.length === 0) {
+    leafCount += 1;
+  } else {
+    for (var i = 0; i < this.children.length; i++) {
+      leafCount += this.children[i].countLeaves();
+    }
+  }
+  return leafCount;
 };
 
 /**
