@@ -23,8 +23,8 @@ var makeHashTable = function(){
         result.insert(bucket[0], bucket[1]);
       });
     });
-    return result
-  };
+    return result;
+  }
 
 //*************************//
 
