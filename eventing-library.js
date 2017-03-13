@@ -24,5 +24,25 @@ listeners.
 */
 
 var mixEvents = function(obj) {
+   var events = {};
 
+  obj.trigger = function (event) {
+    //Your code here
+    var arg = Array.prototype.slice.call(arguments, 1);
+    if (events[event]) {
+      for (let i = 0; i < events[event].length; i++) {
+        events[event][i].apply(this, arg);
+      }
+    }
+  };
+
+  // Register a callback to be fired on this event.
+  obj.on = function (event, callback) {
+    //Your code here
+    if (!events[event]) {
+      events[event] = [];
+    }
+    events[event].push(callback);
+  };
+  return obj;
 };
