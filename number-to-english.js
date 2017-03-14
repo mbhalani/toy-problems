@@ -55,8 +55,66 @@ var numbersToPlace = {
 };
 
 function numberToEnglish(number) {
+  var result = [];
 
+  if (numbersToWords[number]) {
+    return numbersToWords[number];
+  }
+
+  let digits = number.toString().split('').reverse().join('').match(/.{1,3}/g);
+  let place = 100;
+
+  for (let i = 0; i < digits.length; i++) {
+    digits[i] = digits[i].split('').reverse().join('');
+
+    let digitNum = digits[i].split('');
+    if (digitNum.length < 2) {
+      digitNum.unshift('0');
+    }
+    if (digitNum.length < 3) {
+      digitNum.unshift('0');
+    }
+    let tensPlace = +(digitNum[1] + digitNum[2]);
+    let buildWord = '';
+
+    if (+digits[i] >= 1) {
+      if (+digitNum[0] >= 1) {
+        buildWord += numbersToWords[+digitNum[0]] + ' ';
+        buildWord += numbersToPlace[100] + ' ';
+      }
+      if (tensPlace >= 1) {
+        if (numbersToWords[tensPlace]) {
+          buildWord += numbersToWords[tensPlace] + ' ';
+        } else {
+          buildWord += numbersToWords[+digitNum[1] * 10] + '-';
+          buildWord += numbersToWords[+digitNum[2]] + ' ';
+        }
+      }
+      if (place >= 1000) {
+        buildWord += numbersToPlace[place] + ' ';
+      }
+    }
+
+    result.push(buildWord);
+
+    if (place < 1000) {
+      place *= 10;
+    } else {
+      place *= 1000;
+    }
+  }
+
+return result.reverse().join('').trim();
 }
 
-console.log(numberToEnglish(575));
+// for (let i = 0; i < 100; i++) {
+//   console.log(numberToEnglish(i));
+// }
+
+// console.log(numberToEnglish(121));
+console.log(numberToEnglish(6543210987654321));
+
+// console.log(numberToEnglish(76543210987654321));
 console.log(numberToEnglish(78193512));
+console.log(numberToEnglish(1000001));
+console.log(numberToEnglish(700));
